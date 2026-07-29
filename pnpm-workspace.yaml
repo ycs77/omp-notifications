@@ -1,0 +1,8 @@
+shellEmulator: true
+
+trustPolicy: no-downgrade
+
+allowBuilds:
+  onnxruntime-node: false
+  protobufjs: false
+  sharp: false

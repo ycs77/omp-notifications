@@ -1,0 +1,43 @@
+{
+  "name": "omp-notifications",
+  "version": "0.1.0",
+  "description": "An OMP notifications extension.",
+  "keywords": [
+    "notifications",
+    "omp"
+  ],
+  "homepage": "https://github.com/ycs77/omp-notifications",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ycs77/omp-notifications.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "scripts": {
+    "lint": "oxlint",
+    "fmt": "oxfmt",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest",
+    "check": "pnpm lint && pnpm fmt --check && pnpm typecheck && pnpm test --run",
+    "update-actions": "actionspack update",
+    "release": "bumpp --commit \"Release v%s\""
+  },
+  "devDependencies": {
+    "@oh-my-pi/pi-coding-agent": "^17.1.7",
+    "@types/node": "^26.0.1",
+    "actionspack": "^0.1.5",
+    "bumpp": "^11.1.0",
+    "oxfmt": "^0.56.0",
+    "oxlint": "^1.71.0",
+    "oxlint-tsgolint": "^0.23.0",
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.9"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "packageManager": "pnpm@11.9.0"
+}
