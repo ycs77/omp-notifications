@@ -1,0 +1,17 @@
+{
+  "name": "ycs77-notifications",
+  "description": "這裡是 OMP 提示音合集倉庫，會收錄各種有趣好玩的提示音插件",
+  "owner": {
+    "name": "Lucas Yang",
+    "email": "yangchenshin77@gmail.com"
+  },
+  "plugins": [
+    {
+      "name": "notification-basic",
+      "description": "基本鈴聲 - 在 OMP 要求權限、提問或停止時，自動播放提示音通知用戶",
+      "version": "0.1.0",
+      "source": "./plugins/basic",
+      "category": "development"
+    }
+  ]
+}

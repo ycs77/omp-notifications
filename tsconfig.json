@@ -15,6 +15,6 @@
     "verbatimModuleSyntax": true,
     "skipLibCheck": true
   },
-  "include": ["vitest.config.*", ".omp/extensions/**/*", "src/**/*", "test/**/*"],
+  "include": ["vitest.config.*", ".omp/extensions/**/*", "plugins/**/*", "src/**/*", "test/**/*"],
   "exclude": ["node_modules"]
 }
