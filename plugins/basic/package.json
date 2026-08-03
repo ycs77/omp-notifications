@@ -14,7 +14,7 @@
   "type": "module",
   "omp": {
     "extensions": [
-      "./notification.ts"
+      "./extensions/notification.ts"
     ]
   }
 }
