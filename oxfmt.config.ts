@@ -20,4 +20,5 @@ export default defineConfig({
     ],
     newlinesBetween: false,
   },
+  ignorePatterns: ['README.md'],
 })

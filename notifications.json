@@ -1,0 +1,17 @@
+{
+  "version": "0.1.0",
+  "owner": {
+    "name": "Lucas Yang",
+    "email": "yangchenshin77@gmail.com"
+  },
+  "marketplace": {
+    "name": "ycs77-notifications",
+    "description": "這裡是 OMP 提示音合集倉庫，會收錄各種有趣好玩的提示音插件"
+  },
+  "plugins": [
+    {
+      "id": "basic",
+      "name": "基本鈴聲"
+    }
+  ]
+}

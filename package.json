@@ -1,6 +1,6 @@
 {
   "name": "omp-notifications",
-  "version": "0.1.0",
+  "version": "0.0.0",
   "description": "An OMP notifications extension.",
   "keywords": [
     "notifications",
@@ -17,6 +17,7 @@
   ],
   "type": "module",
   "scripts": {
+    "build": "node ./build.js",
     "lint": "oxlint",
     "fmt": "oxfmt",
     "typecheck": "tsc --noEmit",

@@ -5,11 +5,7 @@
 ## Plugin 列表
 
 <!-- plugins:start -->
-
-| Name     | Source                 |
-| -------- | ---------------------- |
-| 基本鈴聲 | [OMP](./plugins/basic) |
-
+- [基本鈴聲](./plugins/basic)
 <!-- plugins:end -->
 
 ## 在 OMP 中安裝
@@ -18,12 +14,6 @@
 
 ```bash
 omp plugin marketplace add ycs77/omp-notifications
-```
-
-接著安裝基本鈴聲 plugin：
-
-```bash
-omp plugin install notification-basic@ycs77-notifications
 ```
 
 ## 作者
