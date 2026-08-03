@@ -23,6 +23,14 @@ omp plugin install notification-basic@ycs77-notifications
 omp plugin link ./plugins/basic
 ```
 
+## WSL 前置需求
+
+在 WSL 中使用此插件前，請先安裝 PulseAudio 工具：
+
+```bash
+sudo apt install pulseaudio-utils
+```
+
 ## 使用說明
 
 安裝後 OMP 會自動載入 extension，無須額外設定。

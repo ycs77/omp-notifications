@@ -29,6 +29,10 @@ importers:
 
   plugins/basic: {}
 
+  plugins/nikaidouhiro: {}
+
+  plugins/sakurabaema: {}
+
 packages:
 
   '@agentclientprotocol/sdk@1.2.1':
