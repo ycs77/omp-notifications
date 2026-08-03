@@ -2,9 +2,6 @@ shellEmulator: true
 
 trustPolicy: no-downgrade
 
-packages:
-  - plugins/*
-
 allowBuilds:
   onnxruntime-node: false
   protobufjs: false

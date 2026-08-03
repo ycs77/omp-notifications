@@ -27,12 +27,6 @@ importers:
         specifier: ^6.0.3
         version: 6.0.3
 
-  plugins/basic: {}
-
-  plugins/nikaidouhiro: {}
-
-  plugins/sakurabaema: {}
-
 packages:
 
   '@agentclientprotocol/sdk@1.2.1':
