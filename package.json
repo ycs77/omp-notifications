@@ -20,21 +20,15 @@
     "lint": "oxlint",
     "fmt": "oxfmt",
     "typecheck": "tsc --noEmit",
-    "test": "vitest",
-    "check": "pnpm lint && pnpm fmt --check && pnpm typecheck && pnpm test --run",
-    "update-actions": "actionspack update",
-    "release": "bumpp --commit \"Release v%s\""
+    "check": "pnpm lint && pnpm fmt --check && pnpm typecheck"
   },
   "devDependencies": {
     "@oh-my-pi/pi-coding-agent": "^17.1.7",
     "@types/node": "^26.0.1",
-    "actionspack": "^0.1.5",
-    "bumpp": "^11.1.0",
     "oxfmt": "^0.56.0",
     "oxlint": "^1.71.0",
     "oxlint-tsgolint": "^0.23.0",
-    "typescript": "^6.0.3",
-    "vitest": "^4.1.9"
+    "typescript": "^6.0.3"
   },
   "engines": {
     "node": ">=22.0.0"
