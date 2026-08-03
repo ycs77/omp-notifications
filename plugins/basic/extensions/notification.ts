@@ -4,7 +4,7 @@ import { resolve } from 'node:path'
 
 type Sound = 'notification' | 'stop'
 
-const PLAY_TIMEOUT_MS = 5_000
+const PLAY_TIMEOUT_MS = 10_000
 
 function isWsl() {
   return (
