@@ -9,21 +9,21 @@
     {
       "name": "notification-basic",
       "description": "基本鈴聲 - 在 OMP 要求權限、提問或停止時，自動播放提示音通知用戶",
-      "version": "1.0.0",
+      "version": "2.1.0",
       "source": "./plugins/basic",
       "category": "development"
     },
     {
       "name": "notification-sakurabaema",
       "description": "櫻羽艾瑪 - 在 OMP 要求權限、提問或停止時，自動播放提示音通知用戶",
-      "version": "1.0.0",
+      "version": "2.1.0",
       "source": "./plugins/sakurabaema",
       "category": "development"
     },
     {
       "name": "notification-nikaidouhiro",
       "description": "二階堂希羅 - 在 OMP 要求權限、提問或停止時，自動播放提示音通知用戶",
-      "version": "1.0.0",
+      "version": "2.1.0",
       "source": "./plugins/nikaidouhiro",
       "category": "development"
     }
