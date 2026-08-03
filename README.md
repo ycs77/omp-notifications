@@ -6,6 +6,8 @@
 
 <!-- plugins:start -->
 - [基本鈴聲](./plugins/basic)
+- [櫻羽艾瑪](./plugins/sakurabaema)
+- [二階堂希羅](./plugins/nikaidouhiro)
 <!-- plugins:end -->
 
 ## 在 OMP 中安裝

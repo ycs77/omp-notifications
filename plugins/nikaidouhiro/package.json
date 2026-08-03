@@ -1,0 +1,20 @@
+{
+  "name": "notification-nikaidouhiro",
+  "version": "0.1.0",
+  "description": "二階堂希羅 - 在 OMP 要求權限、提問或停止時，自動播放提示音通知用戶",
+  "license": "MIT",
+  "author": {
+    "name": "Lucas Yang",
+    "email": "yangchenshin77@gmail.com"
+  },
+  "files": [
+    "notification.ts",
+    "audios"
+  ],
+  "type": "module",
+  "omp": {
+    "extensions": [
+      "./extensions/notification.ts"
+    ]
+  }
+}
