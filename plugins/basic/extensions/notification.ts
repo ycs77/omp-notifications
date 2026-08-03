@@ -25,7 +25,7 @@ async function executePlayer(pi: ExtensionAPI, command: string, args: string[]) 
 }
 
 async function playSound(pi: ExtensionAPI, sound: Sound) {
-  const audioPath = resolve(import.meta.filename, '..', 'audios', `${sound}.wav`)
+  const audioPath = resolve(import.meta.dirname, '..', 'audios', `${sound}.wav`)
 
   switch (process.platform) {
     case 'win32': {
