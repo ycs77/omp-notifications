@@ -1,4 +1,5 @@
 import type { ExtensionAPI } from '@oh-my-pi/pi-coding-agent'
+import { spawnSync } from 'node:child_process'
 import { release } from 'node:os'
 import { resolve } from 'node:path'
 
@@ -13,6 +14,10 @@ function isWsl() {
       process.env.WSL_INTEROP !== undefined ||
       release().toLowerCase().includes('microsoft'))
   )
+}
+
+function hasPaplay() {
+  return spawnSync('command', ['-v', 'paplay'], { stdio: 'ignore', shell: true }).status === 0
 }
 
 async function executePlayer(pi: ExtensionAPI, command: string, args: string[]) {
@@ -39,7 +44,7 @@ async function playSound(pi: ExtensionAPI, sound: Sound) {
       await executePlayer(pi, 'afplay', [audioPath])
       return
     case 'linux':
-      await executePlayer(pi, isWsl() ? 'paplay' : 'aplay', [audioPath])
+      await executePlayer(pi, isWsl() || hasPaplay() ? 'paplay' : 'aplay', [audioPath])
       return
     default:
       throw new Error(`Unsupported platform for notification sounds: ${process.platform}`)
