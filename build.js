@@ -155,7 +155,7 @@ function main() {
 
   requireFile(join(TEMPLATE_DIR, 'package.json.tmpl'))
   requireFile(join(TEMPLATE_DIR, 'README.md.tmpl'))
-  requireFile(join(TEMPLATE_DIR, 'extensions', 'notification.ts'))
+  requireFile(join(TEMPLATE_DIR, 'src', 'index.ts'))
   for (const plugin of registry.plugins) {
     for (const audioFile of AUDIO_FILES) {
       requireFile(join(AUDIO_TEMPLATE_DIR, plugin.id, audioFile))

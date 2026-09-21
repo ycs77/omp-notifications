@@ -8,13 +8,13 @@
     "email": "yangchenshin77@gmail.com"
   },
   "files": [
-    "notification.ts",
+    "src",
     "audios"
   ],
   "type": "module",
   "omp": {
     "extensions": [
-      "./extensions/notification.ts"
+      "./src/index.ts"
     ]
   }
 }
