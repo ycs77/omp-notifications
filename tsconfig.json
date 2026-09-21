@@ -1,12 +1,12 @@
 {
   "compilerOptions": {
     "target": "ESNext",
-    "lib": ["ES2023"],
+    "lib": ["ESNext"],
     "moduleDetection": "force",
-    "module": "NodeNext",
-    "moduleResolution": "NodeNext",
+    "module": "Preserve",
+    "moduleResolution": "Bundler",
     "resolveJsonModule": true,
-    "types": ["node"],
+    "types": ["bun"],
     "allowImportingTsExtensions": true,
     "strict": true,
     "noImplicitThis": true,
@@ -15,6 +15,6 @@
     "verbatimModuleSyntax": true,
     "skipLibCheck": true
   },
-  "include": ["vitest.config.*", ".omp/extensions/**/*", "plugins/**/*", "src/**/*", "test/**/*"],
+  "include": ["plugins/**/*.ts"],
   "exclude": ["node_modules"]
 }

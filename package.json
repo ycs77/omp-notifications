@@ -1,38 +1,19 @@
 {
-  "name": "omp-notifications",
-  "version": "0.0.0",
-  "description": "An OMP notifications extension.",
-  "keywords": [
-    "notifications",
-    "omp"
-  ],
-  "homepage": "https://github.com/ycs77/omp-notifications",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ycs77/omp-notifications.git"
-  },
-  "files": [
-    "dist"
-  ],
+  "private": true,
   "type": "module",
   "scripts": {
-    "build": "node ./build.js",
+    "build": "bun build.js",
     "lint": "oxlint",
     "fmt": "oxfmt",
     "typecheck": "tsc --noEmit",
-    "check": "pnpm lint && pnpm fmt --check && pnpm typecheck"
+    "check": "bun lint && bun fmt --check && bun typecheck"
   },
   "devDependencies": {
-    "@oh-my-pi/pi-coding-agent": "^17.1.7",
-    "@types/node": "^26.0.1",
-    "oxfmt": "^0.56.0",
-    "oxlint": "^1.71.0",
-    "oxlint-tsgolint": "^0.23.0",
-    "typescript": "^6.0.3"
-  },
-  "engines": {
-    "node": ">=22.0.0"
-  },
-  "packageManager": "pnpm@11.9.0"
+    "@oh-my-pi/pi-coding-agent": "^18.0.0",
+    "@types/bun": "^1.4.2",
+    "oxfmt": "^0.68.0",
+    "oxlint": "^1.83.0",
+    "oxlint-tsgolint": "^7.0.2002",
+    "typescript": "^7.0.2"
+  }
 }
