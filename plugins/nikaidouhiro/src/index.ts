@@ -1,19 +1,9 @@
 import type { ExtensionAPI } from '@oh-my-pi/pi-coding-agent'
-import { release } from 'node:os'
 import { resolve } from 'node:path'
 
 type Sound = 'notification' | 'stop'
 
 const PLAY_TIMEOUT_MS = 10_000
-
-function isWsl() {
-  return (
-    process.platform === 'linux' &&
-    (process.env.WSL_DISTRO_NAME !== undefined ||
-      process.env.WSL_INTEROP !== undefined ||
-      release().toLowerCase().includes('microsoft'))
-  )
-}
 
 async function executePlayer(pi: ExtensionAPI, command: string, args: string[]) {
   const result = await pi.exec(command, args, { timeout: PLAY_TIMEOUT_MS })
@@ -39,9 +29,7 @@ async function playSound(pi: ExtensionAPI, sound: Sound) {
       await executePlayer(pi, 'afplay', [audioPath])
       return
     case 'linux':
-      await executePlayer(pi, isWsl() || Bun.which('paplay') !== null ? 'paplay' : 'aplay', [
-        audioPath,
-      ])
+      await executePlayer(pi, Bun.which('paplay') !== null ? 'paplay' : 'aplay', [audioPath])
       return
     default:
       throw new Error(`Unsupported platform for notification sounds: ${process.platform}`)
