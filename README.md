@@ -2,7 +2,7 @@
 
 這裡是 OMP (Oh My Pi) 提示音合集倉庫，會收錄分享一些有趣好玩的提示音 plugin～
 
-## Plugin 列表
+## 插件列表
 
 <!-- plugins:start -->
 - [基本鈴聲](./plugins/basic)
